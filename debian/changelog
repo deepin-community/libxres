@@ -1,3 +1,27 @@
+libxres (2:1.2.1-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on dpkg-dev, libx11-dev,
+      libxext-dev and xutils-dev.
+
+  [ Samuel Thibault ]
+  * control, libxres1-udeb.install: Add libxres1-udeb package
+    (Helps: #1130925).
+  * control: Replace pkg-config with pkgconf.
+  * copyright: Rewrite as DEP-5, complete copyright notices.
+
+ -- Cyril Brulebois <kibi@debian.org>  Thu, 26 Mar 2026 18:40:34 +0100
+
+libxres (2:1.2.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * control: Drop obsolete conflicts on x11proto-resource-dev.
+  * control: Bump policy to 4.6.0.
+  * control, rules: Bump debhelper to 13.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 04 Mar 2022 15:45:59 +0200
+
 libxres (2:1.2.0-4) unstable; urgency=medium
 
   * control: Migrate to x11proto-dev.
